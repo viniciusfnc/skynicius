@@ -1,0 +1,15 @@
+spring:
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
+  r2dbc:
+    username: admin
+    password: LIxVcnU9BTf0Yn5KP1gDOojVEbt5Oict
+    url: r2dbc:postgresql://dpg-cgh4gm82qv23kcojldgg-a.oregon-postgres.render.com:5432/skynicius
+    properties:
+      sslMode: REQUIRE
+  flyway:
+    url: jdbc:postgresql://dpg-cgh4gm82qv23kcojldgg-a.oregon-postgres.render.com:5432/skynicius
+    locations: classpath:db/postgres/migration
+
